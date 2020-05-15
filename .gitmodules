@@ -1,0 +1,35 @@
+[submodule "res/webrepl"]
+	path = res/webrepl
+	url = https://github.com/Hermann-SW/webrepl
+	branch = master
+[submodule "res/thingflow-python"]
+	path = res/thingflow-python
+	url = https://github.com/mpi-sws-rse/thingflow-python
+	branch = master
+[submodule "res/micropython-lib"]
+	path = res/micropython-lib
+	url = https://github.com/micropython/micropython-lib
+	branch = master
+[submodule "res/uping"]
+	path = res/uping
+	url = https://gist.github.com/shawwwn/91cc8979e33e82af6d99ec34c38195fb
+	branch = master
+[submodule "res/slimDNS"]
+	path = res/slimDNS
+	url = https://github.com/nickovs/slimDNS
+	branch = master
+[submodule "res/ttp223"]
+	path = res/ttp223
+	url = https://github.com/mcauser/micropython-ttp223
+	branch = master
+[submodule "res/micropython-sonoff-switch"]
+	path = res/micropython-sonoff-switch
+	url = https://github.com/kfricke/micropython-sonoff-switch
+	branch = master
+[submodule "res/micropython-scheduler"]
+	path = res/micropython-scheduler
+	url = https://github.com/danicampora/Micropython-scheduler
+	branch = master
+[submodule "res/umqtt.simple2"]
+	path = res/umqtt.simple2
+	url = https://github.com/fizista/micropython-umqtt.simple2.git

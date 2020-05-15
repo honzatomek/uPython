@@ -1,0 +1,1 @@
+to enter FLASH mode, connect D3 (GPIO0) to 3.3V before boot. after power-up disconnect and erase flash using esptools.py. finally flash anew.
