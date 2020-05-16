@@ -13,14 +13,13 @@ class WiFi:
         self.__sta_if.active(True)
         print('[+] Connecting to network "{0}'.format(self.__ssid))
         self.__sta_if.connect(self.__ssid, self.__password)
-        i = timeout_ms
         delay = 100
-        while not self.__sta_if.isconnected():
+        for i in range(int(timeout_ms / delay)):
             sleep_ms(delay)
-            i -= delay
-            if i <= 0:
-                break
-        return self.__sta_if.ifconfig()[0] != '0.0.0.0'
+            if self.__sta_if.isconnected():
+                print('[i] WiFi "{0}" connected. IP: {1}'.format(self.__ssid, self.ifconfig()[0]))
+                return True
+        raise Exception('[-] Problem connecting to {0}.'.format(self.__ssid))
 
     def disconnect(self):
         self.__sta_if.disconnect()
@@ -28,3 +27,5 @@ class WiFi:
     def isconnected(self):
         return self.__sta_if.isconnected()
 
+    def ifconfig(self):
+        return self.__sta_if.ifconfig()
