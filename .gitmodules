@@ -36,3 +36,9 @@
 [submodule "bin/esp8266_sht30_mqtt_sub_pub"]
 	path = bin/esp8266_sht30_mqtt_sub_pub
 	url = git@github.com:honzatomek/esp8266_sht30_mqtt_sub_pub.git
+[submodule "bin/sonoff_basic_ecord"]
+	path = bin/sonoff_basic_ecord
+	url = git@github.com:honzatomek/sonoff_basic_ecord.git
+[submodule "bin/PIR_home_security"]
+	path = bin/PIR_home_security
+	url = git@github.com:honzatomek/PIR_home_security.git
